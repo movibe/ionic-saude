@@ -1,0 +1,43 @@
+<ion-view title="Compartilhamento de Dados">
+<ion-content>
+
+<div class="list">
+
+	<div class="item item-divider">
+		Aplicativos:
+	</div>
+
+	<li class="item item-toggle" ng-repeat="aplicativo in aplicativos">
+		<i class="icon ion-{{aplicativo.ico}} color-red"></i> {{aplicativo.name}}
+		<label class="toggle toggle-assertive">
+			<input type="checkbox">
+			<div class="track">
+				<div class="handle"></div>
+			</div>
+		</label>
+	</li>
+
+<p class="padding text-center">Conforme os aplicativos solicitarem permissão para atualizar seus dados, eles serão adcionados à lista.</p>
+
+	<div class="item item-divider">
+		Fonte dos Dados:
+	</div>
+
+	<li class="item item-checkbox" ng-repeat="aplicativo in aplicativos">
+     <label class="checkbox">
+       <input type="checkbox">
+     </label>
+     <i class="icon ion-{{aplicativo.ico}} color-red"></i> {{aplicativo.name}}
+  </li>
+
+
+
+	<p class="padding text-center">
+		As fontes acilna têrn perrissäo para atualizar seus
+dados de pssos. 4lando vris fortes estivereln
+dísponíveis, Llm fonte de dhdos ser escolhida.
+	</p>
+
+</div>
+</ion-content>
+</ion-view>

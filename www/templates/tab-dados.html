@@ -1,0 +1,21 @@
+<ion-view title="Dados de Saúde">
+<ion-content>
+
+<div class="bar bar-header item-input-inset">
+	<label class="item-input-wrapper">
+		<i class="icon ion-ios7-search placeholder-icon"></i>
+		<input type="search" placeholder="Buscar">
+	</label>
+
+</div>
+
+<div class="list">
+
+	<a class="item item-icon-left" href="#" ng-repeat="dado in dados">
+		<i class="icon ion-{{dado.ico}} color-red"></i> {{dado.name}}
+	</a>
+
+</div>
+
+</ion-content>
+</ion-view>

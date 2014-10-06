@@ -1,0 +1,48 @@
+<ion-view title="Minha Saúde">
+<!-- <ion-nav-buttons side="left">
+Logo
+</ion-nav-buttons> -->
+<ion-nav-buttons side="right" ng-controller="popover">
+<button ng-click="openPopover($event)" class="button button-icon icon ion-android-more" ontouchend="window.plugins.deviceFeedback.acoustic()"></button>
+</ion-nav-buttons>
+
+
+<ion-content >
+
+<div class="card">
+  <div class="item item-text-wrap">
+    <morrisdonut id="morris">
+      <div id="donut-example" style="height: 300px; width: 100%;"></div>
+    </morrisdonut>
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="item item-text-wrap">
+    <canvasjsdonut id="canvasjsdonut">
+      <div id="chartContainer" style="height: 300px; width: 100%;">
+      </div>
+    </canvasjsdonut>
+  </div>
+</div>
+
+
+
+
+<div class="card">
+ <div class="item item-text-wrap">
+  <chartjsdonut  id="chartjs">
+    <div id="canvas-holder">
+     <canvas id="chart-area" />
+   </div>
+ </chartjsdonut>
+</div>
+</div>
+
+
+
+
+
+</ion-content>
+</ion-view>

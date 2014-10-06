@@ -1,0 +1,61 @@
+<ion-view title="Ficha Médica"  >
+<ion-content class="">
+
+<div class="details padding">
+	<div class="avatar"><img src="img/{{usuario.pic }}" /></div>
+	<h4>{{ usuario.firstName }} {{ usuario.lastName }}</h4>
+	<p>{{ usuario.title }}</p>
+</div>
+
+<div class="list">
+	
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Cônjuge</span>
+		<input type="text" placeholder="Hipertensão" value="{{usuario.conjuge.name}}">
+	</label>
+
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Grupo Sanguíneo</span>
+		<input type="text" placeholder="Hipertensão" value="{{usuario.sangue}}">
+	</label>
+	
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Peso</span>
+		<input type="text" placeholder="Hipertensão" value="{{usuario.peso}}">
+	</label>
+
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Altura</span>
+		<input type="text" placeholder="Hipertensão" value="{{usuario.altura}}">
+	</label>
+
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Problemas de Saúde</span>
+		<input type="text" placeholder="Hipertensão" value="{{usuario.problema}}">
+	</label>
+	
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Notas Médica</span>
+		<input type="text" placeholder="Em caso e emergência ligar para o Dr. Albert Einstein." value="{{usuario.nota}}">
+	</label>
+	
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Alergias e Reações</span>
+		<input type="text" placeholder="Penicilina - erupções cultanea" value="{{usuario.alergia}}">
+	</label>
+
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Medicamentos</span>
+		<input type="text" placeholder="Lisoprinol (10 mg via oral uma vez ao dia) " value="{{usuario.medicamento}}">
+	</label>
+
+	<label class="item item-input item-stacked-label">
+		<span class="input-label color-red">Contato para Emergência</span>
+		<input type="text" placeholder="Natalia Araujo - Esposa" value="{{usuario.contato}}">
+	</label>
+
+</div>
+<p class="text-center padding">Atualizado em 11/12/2013 - 13:20</p>
+
+</ion-content>
+</ion-view>
